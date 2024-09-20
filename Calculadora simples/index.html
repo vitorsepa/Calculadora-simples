@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel ="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/257/257791.png">
+
+</head>
+<body>
+    <div class="calculadora">
+        <h1>Calculadora</h1>
+        <input type="text" id="display" disabled>
+        <div class="botoes">
+            <button class="btn duplo" onclick="limparDisplay()">C</button>
+            <button class="btn" onclick="apagar()">DEL</button>
+            <button class="btn" onclick="operador('√')">√</button>
+            <button class="btn" onclick="operador('/')">/</button>
+
+            <button class="btn2" onclick="addNumero('7')">7</button>
+            <button class="btn2" onclick="addNumero('8')">8</button>
+            <button class="btn2" onclick="addNumero('9')">9</button>
+            <button class="btn" onclick="operador('*')">x</button>
+
+            <button class="btn2" onclick="addNumero('4')">4</button>
+            <button class="btn2" onclick="addNumero('5')">5</button>
+            <button class="btn2" onclick="addNumero('6')">6</button>
+            <button class="btn" onclick="operador('-')">-</button>
+
+            <button class="btn2" onclick="addNumero('1')">1</button>
+            <button class="btn2" onclick="addNumero('2')">2</button>
+            <button class="btn2" onclick="addNumero('3')">3</button>
+            <button class="btn" onclick="operador('+')">+</button>
+
+            <button class="btn" onclick="addNumero('.')">.</button>
+            <button class="btn duplo" onclick="addNumero('0')">0</button>
+            <button class="btn" onclick="calcularPorcentagem('%')">%</button>
+            <button class="btn" onclick="calcular()">=</button>
+
+
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+<footer>Vítor C - Turma 2b</footer>
+</body>
+</html>
